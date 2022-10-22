@@ -14,7 +14,7 @@ sudo sleep 3
 #sudo sed -i '1s/^/# new DNS\nnameserver 8.8.8.8\nnameserver 8.8.4.4\n# old DNS\n/' /var/run/shill/resolv.conf
 
 # Lauch openvpn, finally...
-sudo openvpn --config malwaremama.2025.ovpn --dev tun0
+sudo openvpn --config <paste your Open VPN config here>.ovpn --dev tun0
 
 # When ctrl-c is hit remove tun0 and cleanup the DNS
 sudo openvpn --rmtun --dev tun0
